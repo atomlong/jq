@@ -1,0 +1,19 @@
+pkgbase = mingw-w64-jq
+	pkgdesc = Command-line JSON processor (mingw-w64)
+	pkgver = 1.6
+	pkgrel = 5
+	url = https://stedolan.github.io/jq/
+	arch = any
+	license = MIT
+	makedepends = -autotools
+	makedepends = -cc
+	depends = -gcc-libs
+	depends = -oniguruma
+	depends = -libwinpthread
+	noextract = jq-1.6.tar.gz
+	source = https://github.com/stedolan/jq/releases/download/jq-1.6/jq-1.6.tar.gz
+	source = no-undefined.patch
+	sha256sums = 5de8c8e29aaa3fb9cc6b47bb27299f271354ebb72514e3accadc7d38b5bbaa72
+	sha256sums = ed3f9824901a49d146b74c2a0a212595522dfa0fa5da32200c8384a779bbfa78
+
+pkgname = -jq
